@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path,include
 from Users import views as user_views
+from django.views.generic import RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +28,9 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='Users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='Users/logout.html'), name='logout'),
     path('EndOf/',include('EndOf.urls')),
+    path('payday/', include('payday.urls')),
+    path('Repub_day/', include('Repub_day.urls')),
+    path('', RedirectView.as_view(url='Repub_day/', permanent=True)),
+    path('Independence/', include('Independence.urls')),
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
