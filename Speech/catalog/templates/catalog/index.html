@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% load static %}
+{% block content %}
+  <h1>Welcome to the home of books</h1>
+  <h3>Welcome</h3>
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}

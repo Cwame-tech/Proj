@@ -3,7 +3,19 @@
     padding:40px 0;
     background-color:#343a40;
     color:white;
-  }
+}
+
+footer{
+    position: fixed;
+    float: bottom;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+}
+   
   
   .footer-basic ul {
     padding:0;

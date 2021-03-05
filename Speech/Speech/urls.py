@@ -32,5 +32,7 @@ urlpatterns = [
     path('Repub_day/', include('Repub_day.urls')),
     path('', RedirectView.as_view(url='Repub_day/', permanent=True)),
     path('Independence/', include('Independence.urls')),
+    path('catalog/', include('catalog.urls')),
+    path('', RedirectView.as_view(url='catalog/')),
     
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

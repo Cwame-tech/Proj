@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'payday.apps.PaydayConfig',
     'Independence.apps.IndependenceConfig',
     'Repub_day.apps.RepubDayConfig',
+    'catalog.apps.CatalogConfig',
 ]
 
 MIDDLEWARE = [
