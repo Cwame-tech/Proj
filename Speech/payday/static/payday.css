@@ -1,12 +1,13 @@
 body{
+    background-image: url('pay.gif');
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
-    background-color: lightblue;
     font-family:  serif;
     font-size: 40px;
+    background-color: lightblue;
+    color: lime;
+   
 }
-
-

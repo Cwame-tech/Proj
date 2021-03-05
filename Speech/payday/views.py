@@ -7,12 +7,13 @@ from datetime import date
 
 def index(request):
     now = datetime.datetime.now()
-   # context = {"Payday: now.month == 7 and now.day == 1}
-    if todays_date.day == 25:
-       print('Hurray, It is pay day')
+    if now == 25:
+        print('Hurry, it is pay day')
     else:
-       print('Sorry. It is not pay day')
-    
-    return render(request, 'html/pay.html', context = context)
+        print('Sorry, your pay will come 25th')
+    title = {'payday':now}
+
+   
+    return render(request, 'html/pay.html', title)
 
 #
