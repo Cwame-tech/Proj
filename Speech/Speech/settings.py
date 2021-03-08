@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'Independence.apps.IndependenceConfig',
     'Repub_day.apps.RepubDayConfig',
     'catalog.apps.CatalogConfig',
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
